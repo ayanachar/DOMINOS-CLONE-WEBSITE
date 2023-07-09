@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dominos.css">
+    <title>DOMINOS</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="dominos_logo.png" alt="Dominos">
+        </div>
+        <ul>
+            <li class="items"><a href="https://www.dominos.co.in/great-deals">SPECIALS</a></li>
+            <li class="items"><a href="https://biz.dominos.com/about-us/">ABOUT US</a></li>
+            <li class="items"><a href="https://pizzaonline.dominos.co.in/">STORES</a></li>
+            <li class="items"><a href="https://www.dominos.co.in/contact">CONTACT US</a></li>
+           
+        </ul>
+        <select id="list" onchange="getSelectValue();">
+            <option value="menu">MENU</option>
+            <option value="veg">VEG</option>
+            <option value="non veg">NON VEG</option>
+            <option value="sides">SIDES</option>
+            <option value="beverages">BEVERAGES</option>
+        </select>
+    <script>
+        
+        function getSelectValue()
+        {
+            var selectedValue = document.getElementById("list").value;
+            console.log(selectedValue);
+        }
+        getSelectValue();
+
+    </script>
+        
+        <button class="btn"><a href="https://play.google.com/store/apps/details?id=com.Dominos&hl=en_IN&gl=US&pli=1">Download App</a></button>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h1 id="h-primary">Welcome to Dominos</h1>
+            <p> Dominos is world's leading franchise when it comes to pizza and other Italian cuisines. We offer a large variety of cheesy items 
+                to choose from all across the globe. From Hot 'n' Spicy Carolina Reaper to the Classic Pepporoni, we have it all.The corporation is 
+                Delaware domiciled and headquartered at the Domino's Farms Office Park in Ann Arbor, Michigan. As of 2018, Domino's had 
+                approximately 15,000 stores, with 5,649 in the United States, 1,500 in India, and 1,249 in the United Kingdom. Domino's has stores 
+                in over 83 countries and 5,701 cities worldwide. In 2018 Domino's Pizza was inducted into the Queensland Business Leaders Hall of 
+                Fame.
+            </p>
+        </div>
+        <button class="btn"><a href="https://pizzaonline.dominos.co.in/">Order Now</a></button>
+    </section>
+
+    <section class="specials">
+            <h1>Our Specials</h1>
+            <div class="inner">
+                <div class="box-1">
+                    <img src="olivechickenpizza.jpg" alt="Olive"><br><br>
+                    <strong style="text-decoration:underline; font-size: 1.5rem;">Olive chicken pizza</strong> <br>
+                    About Chicken Pizza Recipe: An Italian favorite, this chicken pizza recipe is a delicious mix of flat bread or base topped with cheese, chillies, onion, garlic sauce and chunks of chicken.Tossed to perfection, this quick and easy pizza recipe is the solution to all those chicken and cheese cravings. 
+                </div>
+                <div class="box-2">
+                    <img src="margharita1.jpg" alt="margharita" ><br><br>
+                    <strong style="text-decoration:underline; font-size: 1.5rem;">Margharita</strong><br>
+                    Pizza Margherita (more commonly known in English as Margherita pizza) is a typical Neapolitan pizza, made with San Marzano tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil.
+                    The most ordinary pizzas, are dressed with oil, and over there it's spread, as well as salt, the origanum and garlic cloves shredded minutely. 
+                </div>
+            </div>
+    </section>
+
+    <section class="client-section">
+        <div class="h-primary ">Now Dominos is available at</div>
+        <div class="clients">
+            <div class="client-items">
+                <img src="swiggy logo.png" alt="Swiggy">
+            </div>
+            <div class="client-items">
+                <img src="uber eats logo.png" alt="Uber Eats">
+            </div>
+            <div class="client-items">
+                <img src="zomato logo.png" alt="Zomato">
+            </div>
+            <div class="much"><a href=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Ffunny-cat-pizza-delivery-283675577&psig=AOvVaw36UHvAmxCkEwaIPHm5AiRs&ust=1669108569755000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICppI34vvsCFQAAAAAdAAAAABAJinde>and much more....</a></div>
+                
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us:</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
